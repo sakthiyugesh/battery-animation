@@ -1,0 +1,86 @@
+body{
+    background-color: green;
+    height: 100vh;
+    
+}
+
+h1{
+    font-family: sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    margin: 20px;
+    padding: 10px;
+}
+.container{
+    display:flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    height: 400px;
+    width: 500px;
+    margin: auto;
+    border-radius: 30px;
+}
+
+.battery_con{
+    position: relative;
+    padding: 20px;
+}
+.battery{
+    border: solid 3px black ;
+    height: 200px;
+    width: 70px;
+    padding: 7px 15px;
+    border-radius: 10px;
+   
+}
+.top{
+    border: solid 3px ;
+    height: 10px;
+    width: 25px;
+    border-radius: 4px 4px 0 0;
+    position: absolute;
+    top: 2px;
+    right: 60px;
+}
+
+
+.charge{
+  
+    width: 100px;
+    height: 0;
+    position: absolute;
+    bottom: 23px;
+    right: 23px;
+    border-radius: 7px 7px;
+    animation: chargeAnimate 5s linear infinite;
+}
+@keyframes chargeAnimate {
+
+    0%{
+        background-color: red;
+        height: 0;
+    
+    }
+    25%{
+        background-color: red;
+        height: 54px;
+    }
+    50%{
+        background-color:orange;
+        height: 104px;
+    }
+    75%{
+        background-color:yellow;
+        height: 156px;
+    }
+    100%{
+        background-color: green;
+        height: 214px;
+    }
+    
+}
+
+
